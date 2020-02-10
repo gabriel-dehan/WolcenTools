@@ -4,7 +4,7 @@ React & Canvas application. When done, should allow to plan for a build in Wolce
 
 # Roadmap
 
-- [~] Gate of Fate
+- [ ] Gate of Fate (WIP)
 - [ ] Skill panel with modifiers
 - [ ] Statistic Panel
 - [ ] Display stats according to choice made in the 3 categories (passives, skills, statistics)
