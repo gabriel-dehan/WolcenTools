@@ -1,12 +1,10 @@
 import Konva from 'konva';
 import AnimateFireflies from 'vendor/fireflies';
 
-import { movePointAlongMatrix } from 'helpers/canvas';
-
 import Scene from './Scene';
 import Wheel from './Wheel';
 
-class GatesOfFate {
+class GateOfFates {
   constructor(container) {
     AnimateFireflies({ number_flies: 100, color: "#fff", elem: `#fireflies` });
 
@@ -37,4 +35,4 @@ class GatesOfFate {
   }
 }
 
-export default GatesOfFate;
+export default GateOfFates;

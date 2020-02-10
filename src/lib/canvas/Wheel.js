@@ -6,7 +6,6 @@ import InnerWheel from 'assets/images/wheel_inner.png';
 /* 
  * NOTES: In Wolcen circle Sections are counted from 0 to x clockwise.
  */
-
 export default class {
   constructor(props) {
     this.type = props.type;
@@ -91,6 +90,10 @@ export default class {
     this.layers.nodes.add(node).draw();
   }
 
+  renderTree(tree, section) {
+
+  }
+
   drawDebugLine(color, vector1, vector2) {
     var line = new Konva.Line({
       points: [vector1.x, vector1.y, vector2.x, vector2.y],
@@ -108,6 +111,17 @@ export default class {
     this.scene.drawImage('InnerWheel', image, this.layers.wheel, (renderedImage) => {
       this.renderedWheel = renderedImage;
       
+      const tree = [
+        {
+          name: "HARDY",
+          description: "",
+          flavor: "",
+          angle: 0.75,
+          position: 0.25,
+          rarity: 1,
+        }
+      ]
+      this.renderTree();
       this.placeNode(0.75, 0.25);
     });
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 
-import GatesOfFate from 'lib/canvas/GatesOfFate';
+import GateOfFates from 'lib/canvas/GateOfFates';
 
 import {
   Scene,
@@ -19,7 +19,7 @@ class PassiveTree extends Component {
   }
 
   componentDidMount() {
-    this.gof = new GatesOfFate(this.canvas.current);
+    this.gof = new GateOfFates(this.canvas.current);
     this.gof.render();
   }
 
