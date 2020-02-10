@@ -1,5 +1,5 @@
 import Konva from 'konva';
-import { Config, dragBoundFunc, handleDragEvents, handleZoom } from 'helpers/canvas';
+import { Config, dragBoundFunc, handleDragEvents, handleZoom } from './utils';
 
 export default class {
   constructor(container) {
