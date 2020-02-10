@@ -3,6 +3,10 @@ import { movePointAlongMatrix } from 'helpers/canvas';
 
 import InnerWheel from 'assets/images/wheel_inner.png';
 
+/* 
+ * NOTES: In Wolcen circle Sections are counted from 0 to x clockwise.
+ */
+
 export default class {
   constructor(props) {
     this.type = props.type;
@@ -25,7 +29,7 @@ export default class {
     if (this.type === 'inner') {
       return {
         image: InnerWheel,
-        segments: 3,
+        section: 3,
       }
     }
     return null;
@@ -57,7 +61,7 @@ export default class {
     }
   }
 
-  placeNode(angle, offset) {
+  placeNode(angle, offset, segment) {
     /*
      * If inner circle, then 3 parts each 120deg
      * 0.25 (angle %) * 120 = 30

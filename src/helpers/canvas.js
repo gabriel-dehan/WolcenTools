@@ -3,6 +3,7 @@ export const Config = {
   get height() { return window.innerHeight - 55 },
 };
 
+// https://stackoverflow.com/questions/5985072/moving-a-point-along-a-line-in-javascript-canvas
 export const movePointAlongMatrix = (vector1, vector2, percentage) => {
   return {
     x : vector1.x * (1.0 - percentage) + vector2.x * percentage, 
